@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Undangan Hari Jadi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      background: url('IMG1 (2).jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      max-width: 420px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: auto;
+      background-size: cover;
+      background-position: center;
+      border: 3px solid #ff6b8a;
+    }
+    h1 {
+      font-family: Parisienne, cursive;
+      font-size: 32px;
+      color: #ff6b8a;
+      margin: 15px 0 10px;
+    }
+    p { margin: 6px 0; color: #555; }
+    .btn {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: #ff6b8a;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .tentative {
+      display: none;
+      margin-top: 15px;
+      text-align: left;
+      background: #fff0f4;
+      padding: 10px;
+      border-radius: 8px;
+      color: #444;
+      font-size: 14px;
+    }
+    .tentative b { color: #ff4d6d; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar" style="background-image:url('IMG2.jpg');"></div>
+    <h1>Happy Birthday Sayang 💕</h1>
+    <p id="wish">Undangan ini khas buat kamu,Ayum beri awal agar mudah sama ada diterima atau tidak dan jikalau berkelapangan masa atau sudi dengan undangan ini boleh beri tahu,Harap kamu dapat membalas undangan ini.For love letter see on 23 Ogos Love You Maman 💖</p>
+    <p><b>Date:</b> 23 August 2025</p>
+    <p><b>Time:</b> 9:30am – 14.00pm</p>
+     <p><b>Dress Code:</b> Black</p>
+    <div class="btn" onclick="toggleTentative()">Click Here for Tentative</div>
+    <div class="tentative" id="tentative">
+      <p><b>9:30am</b> – Ayum go pickup My Birthday Girl</p>
+      <p><b>10:15am</b> – Photobooth at Pavilion Bukit Jalil</p>
+      <p><b>11:00am</b> – Mamam lunch</p>
+      <p><b>12:30pm</b> – Shopping for maman</p>
+      <p><b>13:00pm</b> – Suprise gift</p>
+     <p><b>13:30pm</b> – Send maman back home</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleTentative() {
+      const box = document.getElementById('tentative');
+      box.style.display = (box.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
